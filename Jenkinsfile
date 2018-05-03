@@ -25,7 +25,7 @@ pipeline {
       steps {
         echo "Deploying ${APP_VERSION}."
       }
-    } 
+    }
   }
   environment {
     MY_NAME = 'Ruby'
