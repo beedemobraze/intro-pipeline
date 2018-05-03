@@ -10,6 +10,7 @@ pipeline {
         echo "${TEST_USER_PSW}"
         sh 'java -version'
       }
+    }
     stage('Deploy') {
       input {
         message "Should we continue?"
@@ -18,7 +19,6 @@ pipeline {
         echo "Continuing with deployment"
       }
     } 
-    }
   }
   environment {
     MY_NAME = 'Ruby'
